@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-grotesk: "Space Grotesk", sans-serif;
+  --color-bg: #0E1530;
+  --color-bg-deep: #0A1024;
+  --color-panel: #1A2550;
+  --color-panel-light: #233269;
+  --color-accent: #6E8FE8;
+  --color-accent-soft: #4D6BC9;
+  --color-text: #EAF0FF;
+  --color-text-dim: #AEB9DC;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background: radial-gradient(circle at 20% 50%, #254CA7, #1C397D 25%, #122654 50%, #09132A 75%, #060D1D);
+  }
+  25% {
+    background: radial-gradient(circle at 50% 20%, #254CA7, #1C397D 25%, #122654 50%, #09132A 75%, #060D1D);
+  }
+  50% {
+    background: radial-gradient(circle at 80% 50%, #254CA7, #1C397D 25%, #122654 50%, #09132A 75%, #060D1D);
+  }
+  75% {
+    background: radial-gradient(circle at 50% 80%, #254CA7, #1C397D 25%, #122654 50%, #09132A 75%, #060D1D);
+  }
+  100% {
+    background: radial-gradient(circle at 20% 50%, #254CA7, #1C397D 25%, #122654 50%, #09132A 75%, #060D1D);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-grotesk);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #0A1024;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Hide NeatGradient watermark */
+canvas#gradient::after {
+  display: none !important;
+}
