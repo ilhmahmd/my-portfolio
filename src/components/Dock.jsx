@@ -10,7 +10,7 @@ import linkedinIcon from "../assets/icons/linkedin.png";
 import premiereIcon from "../assets/icons/premiere.png";
 
 const TOOLS = [
-  { name: "Figma", level: "Intermediate", icon: figmaIcon },
+  { name: "Figma", level: "Intermediate", icon: figmaIcon, href: "https://www.figma.com/design/7hHFOjd2odYqcPYasEnbbh/2026?node-id=0-1&t=E7S4oGwVxC5JkH7j-1" },
   { name: "React", level: "Basic", icon: reactIcon },
   { name: "Laravel", level: "Basic", icon: laravelIcon },
   { name: "HTML5", level: "Intermediate", icon: htmlIcon },
@@ -79,3 +79,4 @@ export default function Dock() {
     </div>
   );
 }
+q
