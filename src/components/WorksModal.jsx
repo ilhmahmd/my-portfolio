@@ -9,7 +9,7 @@ const PROJECTS = [
     name: "Movement Studio",
     accent: "from-green-700 to-black",
     img: movementImg,
-    url: "https://movement-studio.vercel.app",
+    url: "https://movementstudio.space",
   },
   {
     file: "hazen.jsx",
